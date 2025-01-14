@@ -9,8 +9,6 @@ You’re proving to be quite the SQL mastermind—three challenges in, and not a
 
 Now, it’s time to get serious about **team dynamics**. The **Tug of War** game is next on the schedule, and The Front Man has a special request.
 
-<!-- Imagery: Squid Games Tug of War -->
-
 He’s particularly interested in the **demographic advantages** certain teams might have. **Age** does bring wisdom, but **youth** has its merits too, wouldn’t you say?
 
 ---
