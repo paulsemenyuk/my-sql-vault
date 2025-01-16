@@ -47,3 +47,7 @@ How COALESCE() function works with two expressions:
 category: If the category column is not null, the category value is returned.
 MAX(category) OVER (PARTITION BY numbered_category): If the category value is null, it returns the maximum category value within the same numbered_category partition. In other words, it looks for the non-null category value from other rows that share the same numbered_category. This ensures that the missing category values are filled with the appropriate value from the same category group based on the numbered_category column.
 For example, product IDs 1, 2, and 3 are assigned the value of 1 in the numbered_category column. Since the maximum value within this numbered_category partition is also 1, the COALESCE() function assigns the corresponding category value to product IDs 2 and 3, filling in the missing values based on the category of product ID 1.
+
+
+You may find this Stack Overflow post helpful as it provides a concise explanation of a similar question.
+https://stackoverflow.com/questions/56728095/postgresql-last-value-ignore-nulls
