@@ -60,9 +60,7 @@ Your task is to calculate the **cumulative count of song plays** (up to **August
 | 777     | 1238    | 12         |
 | 695     | 4520    | 2          |
 | 125     | 9630    | 1          |
-
 ---
-
 ## Explanation
 
 1. **User 777**:
