@@ -62,30 +62,3 @@ Write a query that:
 2. Calculates the **total transaction volume** for each merchant.
 3. Outputs **0** for merchants without ApplePay transactions.
 4. **Sorts the results** in descending order of total transaction volume.
-
----
-
-## Key Considerations
-1. **Case Insensitivity**:
-   Use a function like `LOWER()` to handle inconsistencies in how "ApplePay" is stored (e.g., "apple pay", "Apple Pay", etc.).
-
-2. **Aggregation**:
-   Use `SUM()` to calculate the total transaction amount for ApplePay transactions.
-
-3. **Default to 0**:
-   Use a `CASE` statement to assign a transaction value of **0** for non-ApplePay payment methods.
-
----
-
-## Query Example
-
-```sql
-SELECT
-  merchant_id,
-  SUM(CASE
-        WHEN LOWER(payment_method) = 'apple pay' THEN transaction_amount
-        ELSE 0
-      END) AS total_transaction
-FROM transactions
-GROUP BY merchant_id
-ORDER BY total_transaction DESC;
