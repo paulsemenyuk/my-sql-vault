@@ -9,7 +9,7 @@ WHERE
 pp.followers>cp.followers
 ORDER BY pp.profile_id;
 
--- Solution P2 (Medium) - dif
+-- Solution P2 (Medium) - My solution is different compared to what Nick suggested.
 
 SELECT
   pp.profile_id
